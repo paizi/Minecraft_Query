@@ -62,7 +62,7 @@ $deip = json_decode($fgip);
 	</tr>
 	<tr>
 	<td>在线玩家</td>
-	<td><?php if(isset($status->players->list)){foreach ($status->players->list as $player){echo $player.'<br />';}}else{echo "无法从服务端获取数据";} ?></td>
+	<td><?php if(isset($status->players->list)){foreach ($status->players->list as $player){echo $player.'<br />';}}else{echo "由于服务端关闭了Query,所以无法从服务端获取数据";} ?></td>
 	</tr>
 	<tr>
 	<td>数据缓存时间</td>
